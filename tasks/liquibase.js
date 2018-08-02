@@ -24,8 +24,8 @@ module.exports = function(grunt) {
     // merge defaults with the passed in options
     var options = this.options({
       changeLogFile : 'changelog.xml',
-      classpath : path.join(__dirname, '..', 'lib', 'postgresql-9.4-1206-jdbc41.jar'),
-      driver : 'org.postgresql.Driver',
+      classpath : path.join(__dirname, '..', 'lib', 'ojdbc6.jar'),
+      driver : 'oracle.jdbc.OracleDriver',
       defaultSchemaName : null,
       logLevel: 'info',
       defaultsFile: null,
